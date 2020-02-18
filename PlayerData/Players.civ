@@ -1,0 +1,4 @@
+-- Civil DB
+-- Your own private player database.
+[`id`, `steam64ID`, `moderator`] VALUES
+(1, '76561198017260467', '1'),
