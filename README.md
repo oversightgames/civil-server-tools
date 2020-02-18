@@ -9,9 +9,10 @@ Next, `civ-server.bat` is the primary tool for running a Civil Server. Before la
 Things to keep in mind:
 
 - Port 7777 must be forwarded; The Unreal Engine Default Port.
-- Server icon should be 32px.
+- Set ServerConfig settings with provided .ini files.
 - You can set custom server parameters in the batch file.
+- Server icons disabled currently.
 - Plugin Support is currently unavailable.
 - PlayerData is transferred but unfunctional in this build.
 
-`Civil Development Kit - Server Tools 0.1`
+`Civil Development Kit - Server Tools v0.1`
