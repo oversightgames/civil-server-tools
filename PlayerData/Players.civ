@@ -1,4 +1,3 @@
-
 -- Civil DB
 -- Your own private player database.
 [`id`, `steam64ID`, `moderator`] VALUES

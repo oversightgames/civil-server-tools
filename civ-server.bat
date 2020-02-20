@@ -9,7 +9,7 @@ SET params=-log
 
 if exist %location%\civilServer.exe (
 
-:: Begin Config Deployment
+:: Packaging Config Files
 echo ====Packaging Config=====
 
 @echo on
@@ -40,7 +40,7 @@ if %%a==GLOBAL_GRAVITY set GLOBAL_GRAVITY=%%b
 
 
 
-:: Packaging Config Files
+:: Deploying Config Files
 echo ======Deploying Config======
 @echo on
 :: xcopy /s /y ..\Plugins\*.* %location%\civil\Content\Paks
