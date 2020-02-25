@@ -32,7 +32,8 @@ for /f "tokens=1,2 delims==" %%a in (preferences.ini) do (
 SETLOCAL EnableDelayedExpansion
 if %%a==OUTPUT_SERVER_LOG set OUTPUT_SERVER_LOG=%%b
 if %%a==GLOBAL_GRAVITY set GLOBAL_GRAVITY=%%b
-    echo(!OUTPUT_SERVER_LOG!!GLOBAL_GRAVITY!
+if %%a==CUSTOM_SEED set CUSTOM_SEED=%%b
+    echo(!OUTPUT_SERVER_LOG!!GLOBAL_GRAVITY!!CUSTOM_SEED!
     ENDLOCAL
 )>>Config.civ
 
