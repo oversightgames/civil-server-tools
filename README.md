@@ -13,6 +13,6 @@ Things to keep in mind:
 - You can set custom server parameters in the batch file.
 - Server icons disabled currently.
 - Plugin Support is currently unavailable.
-- PlayerData is transferred but unfunctional in this build.
+- PlayerData is now standardized with MySQL.
 
-`Civil Development Kit - Server Tools v0.1`
+`Civil Development Kit - Server Tools v0.2`

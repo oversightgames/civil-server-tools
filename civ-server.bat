@@ -37,6 +37,17 @@ if %%a==CUSTOM_SEED set CUSTOM_SEED=%%b
     ENDLOCAL
 )>>Config.civ
 
+cd ..\PlayerData\
+break>Database.civ
+for /f "tokens=1,2 delims==" %%a in (database.ini) do (
+SETLOCAL EnableDelayedExpansion
+if %%a==MYSQL_SERVER_NAME set MYSQL_SERVER_NAME=%%b
+if %%a==MYSQL_USERNAME set MYSQL_USERNAME=%%b
+if %%a==MYSQL_PASSWORD set MYSQL_PASSWORD=%%b
+if %%a==MYSQL_DB_NAME set MYSQL_DB_NAME=%%b
+    echo(!MYSQL_SERVER_NAME!!MYSQL_USERNAME!!MYSQL_PASSWORD!!MYSQL_DB_NAME!
+    ENDLOCAL
+)>>Database.civ
 @echo off
 
 
@@ -45,8 +56,10 @@ if %%a==CUSTOM_SEED set CUSTOM_SEED=%%b
 echo ======Deploying Config======
 @echo on
 :: xcopy /s /y ..\Plugins\*.* %location%\civil\Content\Paks
+move Database.civ %location%
+cd ../
+cd ServerConfig
 move Config.civ %location%
-xcopy /s /y ..\PlayerData\*.* %location%
 
 echo ............................
 
