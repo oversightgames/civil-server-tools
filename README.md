@@ -1,6 +1,8 @@
 # civil-server-tools
 Simple Tools for Civil Community Servers | https://civil-game.com/
 
+> Currently, our server-tools are only available on Windows based machines. We have plans for Linux in the near future.
+
 ## Getting Started
 Before doing anything, ensure you have the `civilServer.exe` tool installed and up to date from Steam.
 
@@ -14,5 +16,3 @@ Things to keep in mind:
 - Server icons disabled currently.
 - Plugin Support is currently unavailable.
 - PlayerData is now standardized with MySQL.
-
-`Civil Development Kit - Server Tools v0.2`
