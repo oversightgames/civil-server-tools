@@ -50,19 +50,16 @@ if %%a==MYSQL_DB_NAME set MYSQL_DB_NAME=%%b
 )>>Database.civ
 @echo off
 
-
-
 :: Deploying Config Files
 echo ======Deploying Config======
 @echo on
 :: xcopy /s /y ..\Plugins\*.* %location%\civil\Content\Paks
-move Database.civ %location%
+move Database.civ %location%\civil
 cd ../
 cd ServerConfig
-move Config.civ %location%
+move Config.civ %location%\civil
 
 echo ............................
-
 
 :: Running Dedicated Server
 echo ======Starting Server======
@@ -72,6 +69,5 @@ start %location%\civilServer.exe %params%
 echo Error: Directory invalid.
 pause
 )
-
 
 :: Window should close without errors.
