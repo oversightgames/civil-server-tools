@@ -47,3 +47,5 @@ Things to keep in mind:
 
 - Server icons disabled currently.
 - Plugin Support is currently unavailable.
+
+> Copyright (c) 2020 Oversight Games™
